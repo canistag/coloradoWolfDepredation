@@ -6,7 +6,7 @@ A Flask web app that uses cleaned data from this [Colorado Parks and Wildlife do
 Built to visualize which counties have the most recorded wolf interactions according to Colorado Parks and Wildlife data from 2021 - 2025.
 
 # Methodology
-Due to the fact that this document has inconsistent formatting, I sought out to create a dataset by hand in Excel. The relevant columns I found were Event Date, County, Amount, and Working Dog/Livestock Involved. Event Data data was standardized into a MM/DD/YYYY format. Working Dog/Livestock Involved was separated into 2 columns: Animals Total and AnimalType. AnimalType would then be cleaned with some trimming and if statements to become AnimalTypeClean. FIPS_Code was added after the fact once the web portion was proven to work. 
+Due to the fact that this document has inconsistent formatting, I sought out to create a dataset by hand in Excel. The relevant columns I found were Event Date, County, Amount, and Working Dog/Livestock Involved. Event Date data was standardized into a consistent format. Working Dog/Livestock Involved was separated into 2 columns: Animals Total and AnimalType. AnimalType would then be cleaned with some trimming and if statements to become AnimalTypeClean. FIPS_Code was added after the fact once the web portion was proven to work. 
 
 As it stands, the data was sorted into six final columns: Event Date, County, FIPS_Code, Amount, AnimalsTotal, AnimalTypeClean.
 
@@ -20,7 +20,13 @@ Within the createDB.py, app.py and app.js files, you will find commented documen
 Flask must be installed prior to using this web app.
 
 # How to Run Locally
+```bash
 
+git clone https://github.com/canistag/coloradoWolfDepredation.git
+cd coloradoWolfDepredation
+python app.py
+
+```
 # Updating the Database
 The entire project is dependent on the wolfCleaned.xlsx spreadsheet. If updates are made to wolfCleaned.xlsx, the createDB file must be ran again to update the database, wolfCleaned.db.
 
