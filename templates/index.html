@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+        >
+        <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+        <style>
+        table { width: 100%; border-collapse: collapse; font-family: sans-serif; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .chart { width: 100%; height: 450px; margin-bottom: 2rem; }
+        </style>
+    </head>
+    <body>
+        <div id="entry">Wolf-Livestock Interaction Dashboard</div>
+
+        <h3>Total Animals Affected by County</h3>
+        <div id="bar-animals" class="chart"></div>
+
+        <h3>Total Claims Paid by County</h3>
+        <div id="bar-amount" class="chart"></div>
+
+        <h3>Total Claims Paid Over Time</h3>
+        <div id="line-claims" class="chart"></div>
+
+        <h3>Claims Paid Heatmap by County</h3>
+        <div id="heatmap-county" class="chart"></div>
+
+        <h3>Raw Data</h3>
+        <table id="data-table">
+        <thead>
+            <tr>
+                <th>Event Date</th>
+                <th>County</th>
+                <th>FIPS Code</th>
+                <th>Amount</th>
+                <th>Animals Total</th>
+                <th>Animal Type</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+            <!-- Data will be inserted here dynamically -->
+        </tbody>
+        </table>
+
+        <script src="{{ url_for('static', filename='app.js') }}"></script>
+    </body>
+</html>
