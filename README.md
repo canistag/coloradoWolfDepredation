@@ -18,7 +18,7 @@ As it stands, the data was sorted into six final columns: Event Date, County, FI
 Excel, then SQLite, for the database. Python and Flask to hook it up to the web framework of HTML/CSS (specifically Pico) and JavaScript.
 
 # Documentation
-Within the createDB.py, app.py and app.js files, you will find commented documentation for learning purposes.
+Within the createDB.py, app.py and app.js files, you will find commented documentation for learning purposes. More information can be found [here](https://github.com/canistag/guides/blob/main/simpleFlaskDashboard.md#setting-up-a-simple-data-visualization-dashboard-with-flask).
 
 # Limitations
 
