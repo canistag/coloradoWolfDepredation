@@ -20,6 +20,10 @@ Excel, then SQLite, for the database. Python and Flask to hook it up to the web 
 # Documentation
 Within the createDB.py, app.py and app.js files, you will find commented documentation for learning purposes.
 
+# Limitations
+
+Data is not live and is hand-cleaned from an inconsistently formatted document.
+
 # Requirements
 
 Python 3 and Flask (listed in requirements.txt).
@@ -33,6 +37,10 @@ pip install -r requirements.txt
 python app.py
 ```
 Open http://127.0.0.1:5000
+
+# What's Next
+
+Predictive analysis. User directed dynamic filtering on charts. 
 
 # Updating the Database
 The entire project is dependent on the wolfCleaned.xlsx spreadsheet. If updates are made to wolfCleaned.xlsx, the createDB file must be ran again to update the database, wolfCleaned.db.
