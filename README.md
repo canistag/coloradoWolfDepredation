@@ -21,17 +21,19 @@ Excel, then SQLite, for the database. Python and Flask to hook it up to the web 
 Within the createDB.py, app.py and app.js files, you will find commented documentation for learning purposes.
 
 # Requirements
-```bash
+
+Python 3 and Flask (listed in requirements.txt).
+
+# How to Run Locally
+
+```
+git clone https://github.com/canistag/coloradoWolfDepredation.git
+cd coloradoWolfDepredation
 pip install -r requirements.txt
 python app.py
 ```
+Open http://127.0.0.1:5000
 
-# How to Run Locally
-```bash
-git clone https://github.com/canistag/coloradoWolfDepredation.git
-cd coloradoWolfDepredation
-python app.py
-```
 # Updating the Database
 The entire project is dependent on the wolfCleaned.xlsx spreadsheet. If updates are made to wolfCleaned.xlsx, the createDB file must be ran again to update the database, wolfCleaned.db.
 
