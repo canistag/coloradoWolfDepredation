@@ -2,7 +2,7 @@
 
 A Flask web app that uses cleaned data from this [Colorado Parks and Wildlife document](https://docs.google.com/document/d/e/2PACX-1vTM3qrkYjvWR142mnWlKNmU_lnKMKo6WRtfrwzfJdXLOrYOXznlwf3mZQcXcGAPrEhrA5mjHK7zdRzp/pub). 
 
-Hosted on [PythonAnywhere](https://canistag.pythonanywhere.com/)
+<a href="https://canistag.pythonanywhere.com/wolf">Live Example</a>
 
 <img width="1908" height="527" alt="image" src="https://github.com/user-attachments/assets/6630737b-1b41-4f4c-aa3b-fb6ab4cfb9de" />
 
